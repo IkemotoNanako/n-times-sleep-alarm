@@ -14,6 +14,10 @@
 		86A53B6B2A092E2800CCB7D8 /* n_times_sleep_alarmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A53B6A2A092E2800CCB7D8 /* n_times_sleep_alarmTests.swift */; };
 		86A53B752A092E2800CCB7D8 /* n_times_sleep_alarmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A53B742A092E2800CCB7D8 /* n_times_sleep_alarmUITests.swift */; };
 		86A53B772A092E2800CCB7D8 /* n_times_sleep_alarmUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A53B762A092E2800CCB7D8 /* n_times_sleep_alarmUITestsLaunchTests.swift */; };
+		86A53B852A0934B800CCB7D8 /* ShakeTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A53B842A0934B800CCB7D8 /* ShakeTime.swift */; };
+		86A53B882A09357F00CCB7D8 /* ShakeTimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A53B872A09357F00CCB7D8 /* ShakeTimeModel.swift */; };
+		86A53B8A2A094D2200CCB7D8 /* AlarmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A53B892A094D2200CCB7D8 /* AlarmModel.swift */; };
+		86A53B8E2A095D2500CCB7D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A53B8D2A095D2500CCB7D8 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		86A53B702A092E2800CCB7D8 /* n times sleep alarmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "n times sleep alarmUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		86A53B742A092E2800CCB7D8 /* n_times_sleep_alarmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = n_times_sleep_alarmUITests.swift; sourceTree = "<group>"; };
 		86A53B762A092E2800CCB7D8 /* n_times_sleep_alarmUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = n_times_sleep_alarmUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		86A53B842A0934B800CCB7D8 /* ShakeTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeTime.swift; sourceTree = "<group>"; };
+		86A53B872A09357F00CCB7D8 /* ShakeTimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeTimeModel.swift; sourceTree = "<group>"; };
+		86A53B892A094D2200CCB7D8 /* AlarmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmModel.swift; sourceTree = "<group>"; };
+		86A53B8D2A095D2500CCB7D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,7 @@
 		86A53B4D2A092E2700CCB7D8 = {
 			isa = PBXGroup;
 			children = (
+				86A53B8D2A095D2500CCB7D8 /* AppDelegate.swift */,
 				86A53B582A092E2700CCB7D8 /* n times sleep alarm */,
 				86A53B692A092E2800CCB7D8 /* n times sleep alarmTests */,
 				86A53B732A092E2800CCB7D8 /* n times sleep alarmUITests */,
@@ -94,8 +103,9 @@
 		86A53B582A092E2700CCB7D8 /* n times sleep alarm */ = {
 			isa = PBXGroup;
 			children = (
+				86A53B862A09356B00CCB7D8 /* Model */,
+				86A53B832A09346300CCB7D8 /* View */,
 				86A53B592A092E2700CCB7D8 /* n_times_sleep_alarmApp.swift */,
-				86A53B5B2A092E2700CCB7D8 /* ContentView.swift */,
 				86A53B5D2A092E2800CCB7D8 /* Assets.xcassets */,
 				86A53B5F2A092E2800CCB7D8 /* Preview Content */,
 			);
@@ -125,6 +135,24 @@
 				86A53B762A092E2800CCB7D8 /* n_times_sleep_alarmUITestsLaunchTests.swift */,
 			);
 			path = "n times sleep alarmUITests";
+			sourceTree = "<group>";
+		};
+		86A53B832A09346300CCB7D8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				86A53B5B2A092E2700CCB7D8 /* ContentView.swift */,
+				86A53B842A0934B800CCB7D8 /* ShakeTime.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		86A53B862A09356B00CCB7D8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				86A53B872A09357F00CCB7D8 /* ShakeTimeModel.swift */,
+				86A53B892A094D2200CCB7D8 /* AlarmModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +285,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86A53B8E2A095D2500CCB7D8 /* AppDelegate.swift in Sources */,
+				86A53B8A2A094D2200CCB7D8 /* AlarmModel.swift in Sources */,
+				86A53B852A0934B800CCB7D8 /* ShakeTime.swift in Sources */,
 				86A53B5C2A092E2700CCB7D8 /* ContentView.swift in Sources */,
 				86A53B5A2A092E2700CCB7D8 /* n_times_sleep_alarmApp.swift in Sources */,
+				86A53B882A09357F00CCB7D8 /* ShakeTimeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
